@@ -1,0 +1,14 @@
+/* src/styles/globals.css */
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f4f7fc;
+  font-family: Inter, sans-serif;
+}

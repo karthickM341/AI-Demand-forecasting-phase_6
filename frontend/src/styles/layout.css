@@ -1,0 +1,166 @@
+/* =========================================================
+   ENTERPRISE SAAS LAYOUT SYSTEM
+   AI DEMAND FORECASTING PLATFORM
+========================================================= */
+
+/* =========================================================
+   APP LAYOUT
+========================================================= */
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar-layout {
+  width: 240px;
+  min-width: 240px;
+  height: 100vh;
+
+  position: sticky;
+  top: 0;
+
+  background: #020617;
+  border-right: 1px solid #1e293b;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  z-index: 50;
+}
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.main-layout {
+  flex: 1;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-x: hidden;
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar-layout {
+  height: 64px;
+  min-height: 64px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 40;
+}
+
+/* =========================================================
+   PAGE WRAPPER
+========================================================= */
+
+.page-wrapper {
+  flex: 1;
+  padding: 16px;
+}
+
+/* =========================================================
+   PAGE CONTAINER
+========================================================= */
+
+.page-container {
+  width: 100%;
+}
+
+/* =========================================================
+   SECTION SPACING
+========================================================= */
+
+.section-spacing {
+  margin-top: 16px;
+}
+
+/* =========================================================
+   GRID HELPERS
+========================================================= */
+
+.grid-gap {
+  gap: 16px;
+}
+
+.grid-gap-sm {
+  gap: 12px;
+}
+
+.grid-gap-lg {
+  gap: 24px;
+}
+
+/* =========================================================
+   CARD HELPERS
+========================================================= */
+
+.card-padding {
+  padding: 16px;
+}
+
+.card-padding-sm {
+  padding: 12px;
+}
+
+.card-padding-lg {
+  padding: 24px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1280px) {
+  .sidebar-layout {
+    width: 220px;
+    min-width: 220px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sidebar-layout {
+    width: 80px;
+    min-width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .sidebar-layout {
+    display: none;
+  }
+
+  .navbar-layout {
+    padding: 0 12px;
+  }
+
+  .page-wrapper {
+    padding: 12px;
+  }
+}
